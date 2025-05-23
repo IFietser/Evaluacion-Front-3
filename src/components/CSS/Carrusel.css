@@ -1,0 +1,14 @@
+h3 {
+  color: black;
+}
+.texto {
+  color: black;
+}
+.goku {
+  width: 300px;
+  height: 300px;
+}
+.carrusel-img {
+  height: 400px;
+  object-fit: cover;
+}
