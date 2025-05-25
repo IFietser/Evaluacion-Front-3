@@ -1,0 +1,20 @@
+.banner {
+  background-image: url("../imagenes/BannerLanas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+.banner-content {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  display: inline-block;
+  padding: 30px 40px;
+  border-radius: 12px;
+}
+
+h1,
+p {
+  color: #fff;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+}

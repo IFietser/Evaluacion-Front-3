@@ -37,7 +37,6 @@ function Carrusel() {
           src={goku}
           alt="Third slide"
         />{" "}
-        className= 'texto'
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p className="texto">
