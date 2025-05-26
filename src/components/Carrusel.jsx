@@ -6,11 +6,7 @@ function Carrusel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-img"
-          src={goku}
-          alt="First slide"
-        />
+        <img className="carrusel-img" src={goku} alt="First slide" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p className="texto">
@@ -19,11 +15,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-img"
-          src={eren}
-          alt="Second slide"
-        />
+        <img className="carrusel-img" src={eren} alt="Second slide" />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p className="texto">
@@ -32,11 +24,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100 carrusel-img"
-          src={goku}
-          alt="Third slide"
-        />{" "}
+        <img className="carrusel-img" src={goku} alt="Third slide" />{" "}
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p className="texto">

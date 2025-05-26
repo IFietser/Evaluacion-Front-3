@@ -9,6 +9,10 @@ h3 {
   height: 300px;
 }
 .carrusel-img {
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
 }
