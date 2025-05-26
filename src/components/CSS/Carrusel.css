@@ -9,10 +9,17 @@ h3 {
   height: 300px;
 }
 .carrusel-img {
-  width: 300px;
-  height: 300px;
   object-fit: cover;
   border-radius: 20px;
   margin: 0 auto;
   display: block;
+}
+.carrusel {
+  background: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
 }

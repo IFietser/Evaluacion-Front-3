@@ -1,12 +1,11 @@
 import Carousel from "react-bootstrap/Carousel";
-import goku from "./Imagenes/goku.jpeg";
-import eren from "./Imagenes/eren.jpeg";
+
 import "./CSS/Carrusel.css";
-function Carrusel() {
+function Carrusel2() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img className="carrusel-img" src={goku} alt="First slide" />
+        <img className="carrusel-img" src="" alt="First slide" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p className="texto">
@@ -15,7 +14,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src={eren} alt="Second slide" />
+        <img className="carrusel-img" src="" alt="Second slide" />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p className="texto">
@@ -24,7 +23,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src={goku} alt="Third slide" />{" "}
+        <img className="carrusel-img" src="" alt="Third slide" />{" "}
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p className="texto">
@@ -36,4 +35,4 @@ function Carrusel() {
   );
 }
 
-export default Carrusel;
+export default Carrusel2;
