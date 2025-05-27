@@ -5,7 +5,6 @@ import Carrusel1 from "./components/Carrusel1";
 import Carrusel2 from "./components/Carrusel2";
 import Banner from "./components/Banner";
 import info from "./components/Imagenes/Informacion.png";
-import Historia from "./components/Historia";
 import Talleres from "./components/Talleres";
 import Productos from "./components/Productos";
 import Nosotros from "./components/Nosotros";
@@ -38,10 +37,6 @@ function Home() {
             <Carrusel2 />
           </div>
         </div>
-      </div>
-      <div id="" className="d-flex justify-content-center my-4">
-        <Historia />
-        <div id="historia" className="d-flex justify-content-center my-4"></div>
       </div>
       <div id="footer">
         <Footer />
