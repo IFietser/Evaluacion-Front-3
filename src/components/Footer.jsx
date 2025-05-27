@@ -12,23 +12,28 @@ const Footer = () => {
         <Row>
           <Col md={4} className="text-center mb-3">
             <h5>Contacto</h5>
-            <div className="d-flex align-items-center justify-content-center gap-2 mb-3">
-              <span className="icon-bg">
-                <img
-                  src={whatsapp}
-                  alt="whatsapp"
-                  style={{
-                    width: "32px",
-                    height: "32px",
-                  }}
-                />
-              </span>
-              <a
-                className="whatsapp"
-                href="https://wa.me/56976322314?text=Quisiera%20informacion"
-              >
-                Whatsapp
-              </a>
+            <div>
+              <div className="red-social mb-2">
+                <span className="icon-bg">
+                  <img
+                    src={whatsapp}
+                    alt="whatsapp"
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      marginBottom: "5px",
+                    }}
+                  />
+                </span>
+                <div>
+                  <a
+                    className="whatsapp"
+                    href="https://wa.me/56976322314?text=Quisiera%20informacion"
+                  >
+                    Whatsapp
+                  </a>
+                </div>
+              </div>
             </div>
           </Col>
           <Col md={4} className="text-center mb-3">

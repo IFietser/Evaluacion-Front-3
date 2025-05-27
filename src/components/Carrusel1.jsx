@@ -1,61 +1,27 @@
 import Carousel from "react-bootstrap/Carousel";
+import trabajo1 from "./Imagenes/Trabajos/trabajos1.png";
+import trabajo2 from "./Imagenes/Trabajos/trabajos2.png";
+import trabajo3 from "./Imagenes/Trabajos/trabajos3.png";
+import trabajo4 from "./Imagenes/Trabajos/trabajos4.png";
+import trabajo5 from "./Imagenes/Trabajos/trabajos5.png";
 import "./CSS/Carrusel.css";
 function Carrusel1() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo1" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p className="texto">
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
-        </Carousel.Caption>
+        <img className="carrusel-img" src={trabajo1} alt="Trabajo1" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo2" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </Carousel.Caption>
+        <img className="carrusel-img" src={trabajo2} alt="Trabajo2" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo3" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p className="texto">
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <img className="carrusel-img" src={trabajo3} alt="Trabajo3" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo4" />
-        <Carousel.Caption>
-          <h3>Fourth slide label</h3>
-          <p className="texto">
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-          </p>
-        </Carousel.Caption>
+        <img className="carrusel-img" src={trabajo4} alt="Trabajo4" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo5" />
-        <Carousel.Caption>
-          <h3>Fifth slide label</h3>
-          <p className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="carrusel-img" src="" alt="Trabajo6" />
-        <Carousel.Caption>
-          <h3>Sixth slide label</h3>
-          <p className="texto">
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <img className="carrusel-img" src={trabajo5} alt="Trabajo5" />
       </Carousel.Item>
     </Carousel>
   );
