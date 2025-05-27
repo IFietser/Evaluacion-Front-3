@@ -8,6 +8,7 @@ import info from "./components/Imagenes/Informacion.png";
 import Historia from "./components/Historia";
 import Talleres from "./components/Talleres";
 import Productos from "./components/Productos";
+import Nosotros from "./components/Nosotros";
 import "./components/CSS/App.css";
 
 function Home() {
@@ -56,6 +57,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/talleres" element={<Talleres />} />
         <Route path="/productos" element={<Productos />} />
+        <Route path="/nosotros" element={<Nosotros />} />
       </Routes>
     </Router>
   );

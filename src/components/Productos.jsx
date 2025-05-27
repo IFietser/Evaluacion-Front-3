@@ -39,7 +39,7 @@ function Productos() {
     traerProductos();
   }, []);
 
-  if (loading) return <div>Cargando productos...</div>;
+  if (loading) return <div className="loading">Cargando productos...</div>;
   if (error) return <div>{error}</div>;
   return (
     <>

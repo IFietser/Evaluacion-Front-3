@@ -23,7 +23,9 @@ function ColorSchemesExample() {
               <Nav.Link as={Link} to="/productos">
                 Productos
               </Nav.Link>
-              <Nav.Link href="#footer">Quienes Somos</Nav.Link>
+              <Nav.Link as={Link} to="/nosotros">
+                Quienes Somos
+              </Nav.Link>
               <Nav.Link href="#footer">Preguntas Frecuentes</Nav.Link>
             </Nav>
           </Navbar.Collapse>
