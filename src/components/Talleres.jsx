@@ -18,7 +18,7 @@ function Talleres() {
       >
         <h1 className="text-center">Tejidos Lana Vivi</h1>
         <p className="text-center">
-          Aqui se mostraran los talleres que se realizan en la tienda,
+          Aqui se mostraran los talleres que se realizan en la tienda
         </p>
       </div>
       <div className="row justify-content-center">

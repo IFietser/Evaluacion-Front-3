@@ -39,6 +39,7 @@ const Footer = () => {
           <Col md={4} className="text-center mb-3">
             <h5>Teje Lanas Vivi &reg;</h5>
             <h5>Viviana Mendez Orrego</h5>
+            <h6>Carlos Leon Briceño #1002 local 4, Laguna.</h6>
             <p>© {new Date().getFullYear()} Todos los derechos reservados.</p>
           </Col>
           <Col md={4} className="text-center mb-3">

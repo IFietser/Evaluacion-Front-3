@@ -12,9 +12,9 @@ function Nosotros() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    document.body.classList.add("productos-bg");
+    document.body.classList.add("nosotros-bg");
     return () => {
-      document.body.classList.remove("productos-bg");
+      document.body.classList.remove("nosotros-bg");
     };
   }, []);
   useEffect(() => {
@@ -36,7 +36,7 @@ function Nosotros() {
     };
     traerNosotros();
   }, []);
-  if (loading) return <div className="loading">Cargando Quienes somos</div>;
+  if (loading) return <div className="loading">Cargando Datos...</div>;
   if (error) return <div>{error}</div>;
 
   return (
