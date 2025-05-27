@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./CSS/Preguntas.css";
 import { useEffect, useState } from "react";
 
@@ -11,9 +12,9 @@ function Preguntas() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    document.body.classList.add("nosotros-bg");
+    document.body.classList.add("preguntas-bg");
     return () => {
-      document.body.classList.remove("nosotros-bg");
+      document.body.classList.remove("preguntas-bg");
     };
   }, []);
   useEffect(() => {
@@ -48,7 +49,6 @@ function Preguntas() {
               <p className="pregunta">
                 <strong>{item.titulo}</strong>
               </p>
-              <br />
               <p>{item.respuesta}</p>
               <br />
               {preguntas.length === 0 && (
@@ -56,10 +56,9 @@ function Preguntas() {
               )}
             </div>
           ))}
-          {/* Si no hay preguntas, mostrar un mensaje */}
-          <p>{}</p>
         </div>
       </Container>
+      <Footer></Footer>
     </>
   );
 }

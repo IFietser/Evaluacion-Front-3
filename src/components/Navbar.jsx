@@ -2,14 +2,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom"; // Cambia Link por NavLink
-import "bootstrap/dist/css/bootstrap.min.css";
-
+import "./CSS/Navbar.css";
 function ColorSchemesExample() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark" expand="sm">
         <Container fluid>
-          <Navbar.Brand>Tejidos Vivi</Navbar.Brand>
+          <Navbar.Brand className="titulo">Tejidos Vivi</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

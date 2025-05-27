@@ -9,6 +9,7 @@ import Talleres from "./components/Talleres";
 import Productos from "./components/Productos";
 import Nosotros from "./components/Nosotros";
 import Preguntas from "./components/Preguntas";
+import Formulario from "./components/Formulario";
 import "./components/CSS/App.css";
 
 function Home() {
@@ -39,7 +40,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="footer">
+      <div>
+        <Formulario />
+      </div>
+      <div>
         <Footer />
       </div>
     </div>

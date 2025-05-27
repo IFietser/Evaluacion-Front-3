@@ -18,3 +18,7 @@ p {
   color: #fff;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
 }
+.banner-content img {
+  width: 750px;
+  height: 350px;
+}

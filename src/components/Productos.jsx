@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./CSS/Productos.css";
 import { useEffect, useState } from "react";
 
@@ -28,7 +29,6 @@ function Productos() {
           throw new Error("Error al cargar los productos");
         }
         const result = await response.json();
-        // Accede correctamente al array de productos
         setProductos(result.data.productos);
       } catch (error) {
         setError(error.message);
@@ -41,18 +41,22 @@ function Productos() {
 
   if (loading) return <div className="loading">Cargando productos...</div>;
   if (error) return <div>{error}</div>;
+
   return (
     <>
       <Navbar />
       <Container className="productos-container d-flex flex-column justify-content-center align-items-center">
         <div className="productos text-center">
           <h1>Nuestros Productos</h1>
+          {productos.length === 0 && (
+            <p>No hay productos disponibles en este momento.</p>
+          )}
           {productos.map((item) => (
-            <div key={item.id}>
-              <p>
+            <div key={item.id} className="producto-item">
+              <p className="producto-nombre">
                 <strong>{item.nombre}</strong>
               </p>
-              <p>{item.descripcion}</p>
+              <p className="descripcion">{item.descripcion}</p>
               <p>
                 Tallas:{" "}
                 {item.tallas && item.tallas.length > 0
@@ -70,7 +74,7 @@ function Productos() {
                 <img
                   src={item.imgs[0]}
                   alt={item.nombre}
-                  style={{ maxWidth: "200px" }}
+                  className="producto-imagen"
                 />
               )}
               <hr />
@@ -78,6 +82,7 @@ function Productos() {
           ))}
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

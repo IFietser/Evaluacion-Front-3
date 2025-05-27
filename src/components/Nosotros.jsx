@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import vivi from "./Imagenes/Certificacion/Certifiacion.png";
 import "./CSS/Nosotros.css";
 import { useEffect, useState } from "react";
@@ -49,7 +50,9 @@ function Nosotros() {
           <br />
           <img src={vivi} alt="" />
         </div>
+        <br />
       </Container>
+      <Footer></Footer>
     </>
   );
 }

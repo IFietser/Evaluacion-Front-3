@@ -1,0 +1,71 @@
+#formulario-contacto {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  margin: 32px auto;
+  padding: 24px 16px;
+  max-width: 600px;
+}
+
+#formulario-contacto h5 {
+  color: #2d2d2d;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  color: #444;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+}
+
+.form-control:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 2px #ffe06655;
+}
+
+button[type="submit"].btn-primary {
+  background: linear-gradient(90deg, #ffd700 60%, #ffb300 100%);
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px #ffd70033;
+  transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"].btn-primary:hover {
+  background: linear-gradient(90deg, #ffb300 60%, #ffd700 100%);
+  color: #111;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.95rem;
+  margin-top: 2px;
+  display: block;
+  min-height: 18px;
+}
+
+.success {
+  color: #388e3c;
+  font-size: 1.1rem;
+  margin-top: 16px;
+  font-weight: 500;
+}
+.container {
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
