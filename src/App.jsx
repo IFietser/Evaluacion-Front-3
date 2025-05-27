@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import info from "./components/Imagenes/Informacion.png";
 import Historia from "./components/Historia";
 import Talleres from "./components/Talleres";
+import Productos from "./components/Productos";
 import "./components/CSS/App.css";
 
 function Home() {
@@ -54,6 +55,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/talleres" element={<Talleres />} />
+        <Route path="/productos" element={<Productos />} />
       </Routes>
     </Router>
   );

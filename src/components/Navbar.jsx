@@ -11,7 +11,8 @@ function ColorSchemesExample() {
         <Container fluid>
           <Navbar.Brand>Tejidos Vivi</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="bacic-navbar-nav">
+          {/* Corrige el id de Collapse */}
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/">
                 Inicio
@@ -19,8 +20,11 @@ function ColorSchemesExample() {
               <Nav.Link as={Link} to="/talleres">
                 Talleres
               </Nav.Link>
-              <Nav.Link href="#historia">Nosotros</Nav.Link>
-              <Nav.Link href="#footer">Contacto</Nav.Link>
+              <Nav.Link as={Link} to="/productos">
+                Productos
+              </Nav.Link>
+              <Nav.Link href="#footer">Quienes Somos</Nav.Link>
+              <Nav.Link href="#footer">Preguntas Frecuentes</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
