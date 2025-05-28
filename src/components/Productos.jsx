@@ -45,7 +45,7 @@ function Productos() {
   return (
     <>
       <Navbar />
-      <Container className="productos-container d-flex flex-column justify-content-center align-items-center">
+      <Container className="productos-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="productos text-center">
           <h1>Nuestros Productos</h1>
           {productos.length === 0 && (

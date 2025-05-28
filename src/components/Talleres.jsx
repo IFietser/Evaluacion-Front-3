@@ -5,13 +5,15 @@ import crochet from "./Imagenes/Talleres/Tallerdecrochet.png";
 import tejido from "./Imagenes/Talleres/Tallerdetejido .png";
 import telar from "./Imagenes/Talleres/TallerTelar.png";
 import "./CSS/Talleres.css";
+import { Container } from "react-bootstrap";
 
 function Talleres() {
   return (
     <>
       <Navbar />
       <Banner />
-      <br />
+      <Container className="productos-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <br />
       <div
         className="Talleres-content container d-flex flex-column justify-content-center align-items-center"
         style={{ minHeight: "40vh" }}
@@ -44,6 +46,7 @@ function Talleres() {
           </div>
         </div>
       </div>
+      </Container>
       <Footer />
     </>
   );

@@ -43,7 +43,7 @@ function Nosotros() {
   return (
     <>
       <Navbar />
-      <Container className="nosotros-container d-flex flex-column justify-content-center align-items-center">
+      <Container className="nosotros-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="nosotros text-center">
           <h1>Quienes Somos</h1>
           <p>{nosotros}</p>

@@ -41,7 +41,7 @@ function Preguntas() {
   return (
     <>
       <Navbar />
-      <Container className="preguntas-container d-flex flex-column justify-content-center align-items-center">
+      <Container className="preguntas-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="preguntas text-center">
           <h1>Preguntas Frecuentes</h1>
           {preguntas.map((item) => (
