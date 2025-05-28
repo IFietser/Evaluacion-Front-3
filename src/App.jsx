@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Carrusel1 from "./components/Carrusel1";
+import Carrusel2 from "./components/Carrusel2";
+import Banner from "./components/Banner";
+import info from "./components/Imagenes/Informacion.png";
+import Talleres from "./components/Talleres";
+import Productos from "./components/Productos";
+import Nosotros from "./components/Nosotros";
+import Preguntas from "./components/Preguntas";
+import Formulario from "./components/Formulario";
+import "./components/CSS/App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
-    <>
+    <div className="d-flex flex-column">
+      <Navbar />
+      <Banner />
+      <div className="row">
+        {/* Carrusel izquierdo */}
+        <div className="col-md-4 mb-3">
+          <h2 className="text-center">Nuestros Trabajos</h2>
+          <div className="carrusel">
+            <Carrusel1 />
+          </div>
+        </div>
+        {/* Contenido central */}
+        <div className="col-md-4 mb-3">
+          <h2 className="text-center">Información Central</h2>
+          <div className="carrusel">
+            <img className="info-img" src={info} alt="Trabajo1" />
+          </div>
+        </div>
+        {/* Carrusel derecho */}
+        <div className="col-md-4 mb-3">
+          <h2 className="text-center">Tienda</h2>
+          <div className="carrusel">
+            <Carrusel2 />
+          </div>
+        </div>
+      </div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Formulario />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <Footer />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/talleres" element={<Talleres />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/preguntas" element={<Preguntas />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

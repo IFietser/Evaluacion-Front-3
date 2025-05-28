@@ -1,0 +1,25 @@
+h3 {
+  color: black;
+}
+.texto {
+  color: black;
+}
+.carrusel-img {
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  height: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.carrusel {
+  background: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 400px;
+}
