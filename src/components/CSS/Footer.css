@@ -43,3 +43,19 @@ h5 {
   font-size: 1.1rem;
   font-weight: 500;
 }
+footer p {
+  word-break: break-word;
+  white-space: normal;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+/* Opcional: mejora el centrado en móviles */
+@media (max-width: 576px) {
+  footer p {
+    font-size: 0.95rem;
+    padding: 0 8px;
+    text-align: center;
+  }
+}

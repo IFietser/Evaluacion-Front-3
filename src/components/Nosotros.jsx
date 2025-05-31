@@ -45,10 +45,10 @@ function Nosotros() {
       <Navbar />
       <Container className="nosotros-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="nosotros text-center">
-          <h1>Quienes Somos</h1>
-          <p>{nosotros}</p>
+          <h2 className="mt-5">Quienes Somos</h2>
+          <p className="nosotros">{nosotros}</p>
           <br />
-          <img src={vivi} alt="" />
+          <img src={vivi} alt="" className="img-fluid" />
         </div>
         <br />
       </Container>

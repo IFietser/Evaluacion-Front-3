@@ -43,7 +43,7 @@ function Preguntas() {
       <Navbar />
       <Container className="preguntas-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="preguntas text-center">
-          <h1>Preguntas Frecuentes</h1>
+          <h2 className="mt-5">Preguntas Frecuentes</h2>
           {preguntas.map((item) => (
             <div key={item.id} className="pregunta-item">
               <p className="pregunta">
