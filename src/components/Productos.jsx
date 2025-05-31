@@ -9,6 +9,7 @@ const API_PRODUCTOS =
 
 function Productos() {
   const [productos, setProductos] = useState([]);
+  const [servicios, setServicios] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -30,6 +31,7 @@ function Productos() {
         }
         const result = await response.json();
         setProductos(result.data.productos);
+        setServicios(result.data.servicios); // Guardar servicios
       } catch (error) {
         setError(error.message);
       } finally {
@@ -47,7 +49,7 @@ function Productos() {
       <Navbar />
       <Container className="productos-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <div className="productos text-center">
-          <h1>Nuestros Productos</h1>
+          <h2 className="mt-5">Nuestros Productos</h2>
           {productos.length === 0 && (
             <p>No hay productos disponibles en este momento.</p>
           )}
@@ -57,23 +59,46 @@ function Productos() {
                 <strong>{item.nombre}</strong>
               </p>
               <p className="descripcion">{item.descripcion}</p>
-              <p>
-                Tallas:{" "}
-                {item.tallas && item.tallas.length > 0
-                  ? item.tallas.join(", ")
-                  : "No disponible"}
-              </p>
-              <p>
-                Colores:{" "}
-                {item.colores && item.colores.length > 0
-                  ? item.colores.join(", ")
-                  : "No disponible"}
-              </p>
-              <p>Precio: ${item.precio}</p>
+              {/* Mostrar tallas solo si existen */}
+              {item.tallas && item.tallas.length > 0 && (
+                <p className="tallas">Tallas: {item.tallas.join(", ")}</p>
+              )}
+              {/* Mostrar colores solo si existen */}
+              {item.colores && item.colores.length > 0 && (
+                <p className="colores">Colores: {item.colores.join(", ")}</p>
+              )}
+              {/* Mostrar precio si existe */}
+              {"precio" in item && (
+                <p className="precio">Precio: ${item.precio}</p>
+              )}
               {item.imgs && item.imgs.length > 0 && (
                 <img
                   src={item.imgs[0]}
                   alt={item.nombre}
+                  className="producto-imagen"
+                />
+              )}
+              <hr />
+            </div>
+          ))}
+
+          {/* Mostrar servicios */}
+          <h2 className="mt-5">Talleres y Servicios</h2>
+          {servicios.length === 0 && (
+            <p>No hay talleres/servicios disponibles en este momento.</p>
+          )}
+          {servicios.map((servicio) => (
+            <div key={servicio.id} className="producto-item">
+              <p className="producto-nombre">
+                <strong>{servicio.nombre}</strong>
+              </p>
+              <p className="ubicacion">Ubicación: {servicio.ubicacion}</p>
+              <p className="cupos">Cupos: {servicio.cupos}</p>
+              <p className="fecha">Fecha: {servicio.fecha}</p>
+              {servicio.imgs && servicio.imgs.length > 0 && (
+                <img
+                  src={servicio.imgs[0]}
+                  alt={servicio.nombre}
                   className="producto-imagen"
                 />
               )}
