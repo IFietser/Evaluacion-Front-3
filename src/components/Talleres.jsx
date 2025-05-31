@@ -15,10 +15,10 @@ function Talleres() {
       <Container className="talleres-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
         <br />
         <div
-          className="Talleres-content container d-flex flex-column justify-content-center align-items-center"
+          className="Talleres-content d-flex flex-column justify-content-center align-items-center"
           style={{ minHeight: "20vh" }}
         >
-          <h1 className="text-center">Tejidos Lana Vivi</h1>
+          <h1 className="text-fluid">Tejidos Lana Vivi</h1>
           <p className="text-center">
             Aqui se mostraran los talleres que se realizan en la tienda
           </p>

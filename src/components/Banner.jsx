@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="banner text-center d-flex flex-column justify-content-center align-items-center">
       <div className="banner-content">
-        <img src={banner} alt="" />
+        <img src={banner} alt="" className="img-fluid" />
       </div>
     </div>
   );
