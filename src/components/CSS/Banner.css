@@ -7,18 +7,27 @@
   text-align: center;
 }
 .banner-content {
-  background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
-  display: inline-block;
-  padding: 30px 40px;
-  border-radius: 12px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
 h1,
 p {
   color: #fff;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
 }
 .banner-content img {
-  width: 750px;
-  height: 350px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px; /* Limita el ancho máximo en pantallas grandes */
+}
+@media (max-width: 600px) {
+  .banner-content img {
+    max-width: 95vw;
+    max-width: 320px;
+  }
 }
